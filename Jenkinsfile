@@ -10,8 +10,8 @@ pipeline{
 	stages{
 		stage('Checkout'){
 			steps{
-				git branch: paramas.BRANCH_NAME,
-				url: 'https://github.com/dimpledimpu50-cmyk/pract/blob/main/Jenkinsfile'
+				git branch: params.BRANCH_NAME,
+				url: 'https://github.com/dimpledimpu50-cmyk/pract.git'
 			}
 		}
 		stage('Build'){
